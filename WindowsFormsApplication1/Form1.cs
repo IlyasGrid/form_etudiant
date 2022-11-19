@@ -87,5 +87,10 @@ namespace WindowsFormsApplication1
             dataGridView1.DataSource = dt;
             cnx.Close();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

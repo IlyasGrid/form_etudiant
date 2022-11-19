@@ -41,16 +41,20 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 33);
+            this.dataGridView1.Location = new System.Drawing.Point(18, 51);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(377, 150);
+            this.dataGridView1.RowHeadersWidth = 62;
+            this.dataGridView1.Size = new System.Drawing.Size(566, 231);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // btnInsert
             // 
-            this.btnInsert.Location = new System.Drawing.Point(39, 332);
+            this.btnInsert.Location = new System.Drawing.Point(58, 511);
+            this.btnInsert.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(75, 23);
+            this.btnInsert.Size = new System.Drawing.Size(112, 35);
             this.btnInsert.TabIndex = 1;
             this.btnInsert.Text = "insert";
             this.btnInsert.UseVisualStyleBackColor = true;
@@ -58,23 +62,26 @@
             // 
             // txtId_dossier
             // 
-            this.txtId_dossier.Location = new System.Drawing.Point(49, 217);
+            this.txtId_dossier.Location = new System.Drawing.Point(74, 334);
+            this.txtId_dossier.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtId_dossier.Name = "txtId_dossier";
-            this.txtId_dossier.Size = new System.Drawing.Size(100, 20);
+            this.txtId_dossier.Size = new System.Drawing.Size(148, 26);
             this.txtId_dossier.TabIndex = 2;
             // 
             // txtNom_dossier
             // 
-            this.txtNom_dossier.Location = new System.Drawing.Point(49, 243);
+            this.txtNom_dossier.Location = new System.Drawing.Point(74, 374);
+            this.txtNom_dossier.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNom_dossier.Name = "txtNom_dossier";
-            this.txtNom_dossier.Size = new System.Drawing.Size(100, 20);
+            this.txtNom_dossier.Size = new System.Drawing.Size(148, 26);
             this.txtNom_dossier.TabIndex = 3;
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(120, 332);
+            this.btnUpdate.Location = new System.Drawing.Point(180, 511);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.Size = new System.Drawing.Size(112, 35);
             this.btnUpdate.TabIndex = 5;
             this.btnUpdate.Text = "update";
             this.btnUpdate.UseVisualStyleBackColor = true;
@@ -82,9 +89,10 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(201, 332);
+            this.btnDelete.Location = new System.Drawing.Point(302, 511);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.Size = new System.Drawing.Size(112, 35);
             this.btnDelete.TabIndex = 6;
             this.btnDelete.Text = "delete";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -92,9 +100,10 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(419, 33);
+            this.button4.Location = new System.Drawing.Point(628, 51);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(112, 35);
             this.button4.TabIndex = 7;
             this.button4.Text = "select";
             this.button4.UseVisualStyleBackColor = true;
@@ -102,9 +111,9 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(682, 380);
+            this.ClientSize = new System.Drawing.Size(1023, 585);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
@@ -112,6 +121,7 @@
             this.Controls.Add(this.txtId_dossier);
             this.Controls.Add(this.btnInsert);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
